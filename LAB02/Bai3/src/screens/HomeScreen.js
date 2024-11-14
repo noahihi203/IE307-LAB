@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+//Bùi Quốc Lâm - 22520733
 
 const HomeScreen = () => {
   return (

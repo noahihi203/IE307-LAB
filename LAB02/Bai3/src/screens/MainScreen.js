@@ -14,7 +14,7 @@ const Tab = createBottomTabNavigator();
 
 const MainScreen = () => {
   const { userInfo } = useContext(AuthContext);
-
+  //Bùi Quốc Lâm - 22520733
   return (
     <Tab.Navigator
       screenOptions={{ headerShown: false, tabBarInactiveTintColor: "black" }}

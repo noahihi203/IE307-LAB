@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
-
+//Bùi Quốc Lâm - 22520733
 const Logo = ({ title }) => (
   <View style={styles.logoContainer}>
     <Image style={styles.logo} source={require("../../assets/logo/logo.png")} />

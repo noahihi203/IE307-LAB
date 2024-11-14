@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, StyleSheet, Pressable } from "react-native";
+//Bùi Quốc Lâm - 22520733
 
 export default function AppButton(props) {
   const { onPress, title = "Save" } = props;

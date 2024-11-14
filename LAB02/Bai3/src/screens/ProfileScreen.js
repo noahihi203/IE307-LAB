@@ -2,14 +2,13 @@ import React, { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigation } from "@react-navigation/native";
-
+//Bùi Quốc Lâm - 22520733
 const ProfileScreen = () => {
   const { logout } = useContext(AuthContext);
   const navigation = useNavigation();
   const handleLogout = () => {
     logout(navigation);
   };
-
   return (
     <View style={styles.body}>
       <View style={styles.container}>
@@ -26,24 +25,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#F2F4F7",
     flex: 1,
   },
-  container: {
-    flex: 1,
-    flexDirection: "column",
-    backgroundColor: "#F2F4F7",
-    justifyContent: "center",
-    marginHorizontal: 30,
+  container: {flex: 1,flexDirection: "column",backgroundColor: "#F2F4F7",justifyContent: "center", marginHorizontal: 30,
   },
-  title: {
-    textAlign: "center",
+  title: {textAlign: "center",
   },
-  logoutButton: {
-    marginTop: 10,
-    backgroundColor: "#24A0ED",
-    height: 40,
-    width: 80,
-    justifyContent: "center",
-    alignItems: "center",
-    alignSelf: "center",
+  logoutButton: {marginTop: 10,backgroundColor: "#24A0ED",height: 40,width: 80,justifyContent: "center",alignItems: "center",alignSelf: "center",
   },
   logoutButtonText: {
     color: "white",

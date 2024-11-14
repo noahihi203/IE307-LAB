@@ -5,7 +5,7 @@ import RegisterScreen from "../screens/RegisterScreen";
 import MainScreen from "../screens/MainScreen";
 
 const Stack = createNativeStackNavigator();
-
+//22520733 - Bùi Quốc Lâm
 const AuthStack = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>

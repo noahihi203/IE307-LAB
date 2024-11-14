@@ -12,6 +12,7 @@ import Logo from "../component/logo";
 import AppButton from "../component/button";
 import { AuthContext } from "../context/AuthContext";
 
+
 const LoginScreen = ({ navigation }) => {
   const { login, validEmail, validPassword } = useContext(AuthContext);
   const [email, setEmail] = useState("");
@@ -39,7 +40,6 @@ const LoginScreen = ({ navigation }) => {
           secure={true}
           onChangeText={setPassword}
         />
-
         <TouchableOpacity>
           <Text style={styles.forgotText}>Forgot password?</Text>
         </TouchableOpacity>
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
   navigationTextNormal: {
     fontSize: 20,
-  },
+  },/* //Bùi Quốc Lâm - 22520733 */
   externalLoginText: {
     fontWeight: "bold",
     fontSize: 25,

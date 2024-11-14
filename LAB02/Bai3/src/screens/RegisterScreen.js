@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import InputField from "../component/inputBox.js";
 import Logo from "../component/logo.js"
 import AuthButton from "../component/button.js";
-
+//Bùi Quốc Lâm - 22520733
 const RegisterScreen = ({ navigation }) => (
   <View style={styles.body}>
     <View style={styles.container}>
@@ -16,9 +16,7 @@ const RegisterScreen = ({ navigation }) => (
         placeholder="Confirm password"
         secure={true}
       />
-
       <AuthButton title="CREATE" />
-
       <View style={styles.textToLogin}>
         <Text style={styles.text}> Already have an account? </Text>
         <TouchableOpacity
