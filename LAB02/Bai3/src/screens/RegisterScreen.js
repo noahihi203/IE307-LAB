@@ -8,7 +8,6 @@ const RegisterScreen = ({ navigation }) => (
   <View style={styles.body}>
     <View style={styles.container}>
       <Logo title={"Create New Account"} />
-
       <InputField type="user" placeholder="Enter username" />
       <InputField type="mail" placeholder="Enter email" />
       <InputField type="password" placeholder="Enter password" secure={true} />
@@ -20,11 +19,11 @@ const RegisterScreen = ({ navigation }) => (
 
       <AuthButton title="CREATE" />
 
-      <View style={styles.nagivationTextContainer}>
+      <View style={styles.textToLogin}>
         <Text style={styles.text}> Already have an account? </Text>
         <TouchableOpacity
           title="Login now!"
-          onPress={() => navigation.navigate("LoginScreen")}
+          onPress={() => navigation.navigate("login-screen")}
         >
           <Text style={styles.navigationText}>Login now!</Text>
         </TouchableOpacity>
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
-  nagivationTextContainer: {
+  textToLogin: {
     flexDirection: "row",
     marginTop: 20,
   },

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import FavoriteScreen from "../screens/FavoritesScreen"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import FavoritesScreen from "../screens/FavoritesScreen";
 import CategoryScreen from "../screens/CategoriesScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import HomeScreen from "../screens/HomeScreen";
@@ -10,7 +10,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import Octicons from "@expo/vector-icons/Octicons";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-const Tab = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const MainScreen = () => {
   const { userInfo } = useContext(AuthContext);
@@ -39,7 +39,7 @@ const MainScreen = () => {
       />
       <Tab.Screen
         name="Favorites"
-        component={FavoriteScreen}
+        component={FavoritesScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
             <Octicons name="heart-fill" size={size} color={color} />

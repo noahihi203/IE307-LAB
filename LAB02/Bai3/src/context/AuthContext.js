@@ -21,11 +21,20 @@ export const AuthProvider = ({ children }) => {
 
   const logout = (navigation) => {
     setAuthUser(null);
-    navigation.navigate("LoginScreen");
+    navigation.navigate("login-screen");
   };
 
   return (
-    <AuthContext.Provider value={{ authUser, login, logout, authError }}>
+    <AuthContext.Provider
+      value={{
+        authUser,
+        login,
+        logout,
+        authError,
+        validEmail: testEmail,
+        validPassword: testPassword,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
